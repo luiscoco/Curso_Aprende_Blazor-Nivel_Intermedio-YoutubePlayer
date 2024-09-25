@@ -13,6 +13,14 @@ https://developers.google.com/youtube/iframe_api_reference
 
 We create a new JavaScript for integrating a YouTube video player into a webpage
 
+We right click on the wwwroot folder and we select the menu option Add New Element
+
+![image](https://github.com/user-attachments/assets/1022fea5-27ad-4d72-8e5a-a1c08e2a2f03)
+
+We input the new JavaScript file name **youtubePlayer.ja**:
+
+![image](https://github.com/user-attachments/assets/3485cb66-7a92-491c-8a71-60275635c431)
+
 See the application folders and files structure
 
 ![image](https://github.com/user-attachments/assets/07e6e356-9137-4abf-964b-40a4b83f2e0a)
