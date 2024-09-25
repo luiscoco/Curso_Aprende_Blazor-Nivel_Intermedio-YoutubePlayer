@@ -98,9 +98,90 @@ This is the App.razor whole code:
 
 # 4. Create a new Razor Component for invoking the JavaScript functions
 
-We right click on the **Pages** folder and select the menu option Add New Razor Component and set the component name YoutubePlayerComponent.razor
+We right click on the **Pages** folder and select the menu option Add New Razor Component
 
+![image](https://github.com/user-attachments/assets/aeb626b0-109e-45ab-946b-f527afaa8b01)
 
+And we input the component name **YoutubePlayerComponent.razor**
 
+![image](https://github.com/user-attachments/assets/e7fd01e3-0a10-45c7-881a-a7949ba0f2c9)
 
+This is the **YoutubePlayerComponent.razor** source code:
+
+```razor
+@page "/player"
+
+@inject IJSRuntime JSRuntime
+
+<h1>YouTube Video Player</h1>
+
+<!-- Container for the four videos -->
+<div class="video-container">
+    <iframe id="video1"
+            width="300" height="200"
+            src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1"
+            frameborder="0"
+            style="border: solid 4px #37474F">
+    </iframe>
+
+    <iframe id="video2"
+            width="300" height="200"
+            src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1"
+            frameborder="1"
+            style="border: solid 4px #37474F">
+    </iframe>
+
+    <iframe id="video3"
+            width="300" height="200"
+            src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1"
+            frameborder="0"
+            style="border: solid 4px #37474F">
+    </iframe>
+
+    <iframe id="video4"
+            width="300" height="200"
+            src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1"
+            frameborder="0"
+            style="border: solid 4px #37474F">
+    </iframe>
+</div>
+
+<br />
+
+<button class="btn btn-primary" width="10" height="10" @onclick="MessageShow">Click me</button>
+
+<br />
+
+<br />
+
+<p>@message</p>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Ensure the YouTube API is loaded
+            await JSRuntime.InvokeVoidAsync("eval", "onYouTubeIframeAPIReady();");
+        }
+    }
+
+    private string message = "";
+
+    private void MessageShow()
+    {
+        message = "Hola Amigo!";
+    }
+}
+
+<!-- Add this CSS to style the container and the spacing between the videos -->
+<style>
+    .video-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px; /* Space between the videos */
+        flex-wrap: wrap; /* Ensure it wraps in case the screen size is too small */
+    }
+</style>
+```
 
