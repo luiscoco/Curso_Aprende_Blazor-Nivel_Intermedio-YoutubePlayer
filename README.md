@@ -8,6 +8,21 @@ https://developers.google.com/youtube/iframe_api_reference
 
 ## 1. Create a Blazor Web Application with Visual Studio 2022 Commuity Edition
 
+We run Visual Studio 2022 and select the menu option Create a new project
+
+![image](https://github.com/user-attachments/assets/36ad9e57-6b91-4141-a1d4-779866020809)
+
+We search for Blazor project temaplates and select Blazor Web App and press the Next button
+
+![image](https://github.com/user-attachments/assets/0dd77ecb-c283-400f-8c7d-b5bcd51d0a12)
+
+We input the project name and location in the hard disk and press the Next button
+
+![image](https://github.com/user-attachments/assets/0345e36c-28df-4c06-b92c-27e26c426c66)
+
+We leave the default values and press the Create button
+
+![image](https://github.com/user-attachments/assets/c6b7c316-827d-4a2c-a8cc-70b070455d3b)
 
 ## 2. Create a new JavaScript file
 
