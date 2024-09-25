@@ -23,7 +23,7 @@ We input the new JavaScript file name **youtubePlayer.ja**:
 
 See the application folders and files structure
 
-![image](https://github.com/user-attachments/assets/07e6e356-9137-4abf-964b-40a4b83f2e0a)
+![image](https://github.com/user-attachments/assets/062d8983-0dd6-4259-9c24-36a2c5b43920)
 
 This is the new **youtubePlayer.ja** sourcecode:
 
