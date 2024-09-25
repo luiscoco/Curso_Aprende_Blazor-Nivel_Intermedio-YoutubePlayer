@@ -96,6 +96,11 @@ This is the App.razor whole code:
 </html>
 ```
 
+# 4. Create a new Razor Component for invoking the JavaScript functions
+
+We right click on the **Pages** folder and select the menu option Add New Razor Component and set the component name YoutubePlayerComponent.razor
+
+
 
 
 
