@@ -193,3 +193,19 @@ This is the **YoutubePlayerComponent.razor** source code:
 </style>
 ```
 
+## 5. Modify the NavMenu.razor component to include a new NavLink for the YoutubePlayerComponent.razor component
+
+Add the following code in the **NavMenu.razor** file:
+
+```
+<div class="nav-item px-3">
+     <NavLink class="nav-link" href="player">
+         <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> YoutubePlayer
+     </NavLink>
+</div>
+```
+
+## 6. Run the application and see the result
+
+![image](https://github.com/user-attachments/assets/643d0e24-1bb5-4cab-9732-9986fe098f66)
+
